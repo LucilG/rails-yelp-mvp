@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+5.times do |i|
+  name_restau = "Restaurant_name#{i}"
+  address_restau = "Restaurant_address#{i}"
+  phone_nb_restau = "01 23 45 67 89";
+  cat_restau = ['chinese', 'italian', 'japanese', 'french', 'belgian'].sample
+  Restaurant.create({ name: name_restau, address: address_restau, phone_number: phone_nb_restau, category: cat_restau })
+end

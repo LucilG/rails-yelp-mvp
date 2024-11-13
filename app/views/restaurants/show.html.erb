@@ -1,0 +1,18 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <h2>Details of the restaurant</h2>
+
+  <%= render 'restaurant_details' %>
+
+  <br>
+
+  <div class="review">
+    <%= render '/reviews/reviews_list', reviews: @restaurant.reviews %>
+    <p><%= link_to "Add a review", new_restaurant_review_path(@restaurant), class:"btn btn-primary" %></p>
+  </div>
+
+  <div class="footer">
+    <p><%= link_to "Go back to the list", restaurants_path %></p>
+    <p><%= link_to "Go back to HomePage", root_path %></p>
+  </div>
+</div>

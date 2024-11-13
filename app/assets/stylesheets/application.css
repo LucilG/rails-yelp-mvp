@@ -13,3 +13,101 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+  text-align: center;
+  border-bottom: 1px solid grey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.restaurant-list {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant-card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-list {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.review-card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+  background-color: lightgrey;
+  width: 100%;
+  margin: 0px;
+  padding-inline: 5px;
+}
+
+.card-subtitle {
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

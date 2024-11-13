@@ -1,0 +1,6 @@
+<h2>Reviews of the restaurant</h2>
+<div class="review-list">
+  <% reviews.each_with_index do |review, index| %>
+      <%= render '/reviews/review_details', review:review, index:index %>
+  <% end %>
+</div>
